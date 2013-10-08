@@ -1,0 +1,13 @@
+h1 Notepad
+h2 Welcome to Notepad
+a(href="/notes/new") New Note
+ul
+        each note in notes
+            li: a(href="/notes/#{note.id}") #{note.title}
+
+            a(href="/notes/#{note.id}/edit") Edit
+
+            form(action="/notes/#{note.id}", method="POST")
+                input(type="hidden", name="_method", value="DELETE")
+                button(type="submit") Delete
+            hr(width="25%" align="left")

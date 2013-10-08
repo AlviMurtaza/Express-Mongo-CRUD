@@ -1,0 +1,13 @@
+h1 #{note.title}
+hr
+p #{note.nbody}
+h5 Created: #{note.created}
+h5 Updated: #{note.updated}
+
+ul
+    li: a(href="/notes/#{note.id}/edit") Edit
+    li: form(action="/notes/#{note.id}", method="POST")
+            input(type="hidden", name="_method", value="DELETE")
+            button(type="submit") Delete
+
+a(href="/notes") Back To Home

@@ -1,0 +1,8 @@
+
+
+form(method="POST" action="/notes")
+    p Title:
+        input#title(type="text" name="title" placeholder="Title of Note")
+    p
+        textarea(name="nbody", placeholder="Begin To Write")
+    p: button(type="submit") Save

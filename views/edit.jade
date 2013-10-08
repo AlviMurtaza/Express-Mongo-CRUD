@@ -1,0 +1,11 @@
+h1 Update Note
+
+form(method="POST", action="/notes/#{note.id}")
+    input(type="hidden", name="_method", value="PUT")
+
+    p Title:
+        input#title(type="text", name="title", value="#{note.title}")
+    p Body:
+        input(type="text", name="nbody", value="#{note.nbody}")
+    p: button(type="submit") Update
+
