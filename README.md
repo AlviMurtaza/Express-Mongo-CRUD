@@ -10,9 +10,9 @@ Runs like a typical express app:
 
 ### Checking in Browser
 
-Run the app in Browser
+Run the app in Browser:
 
-http://localhost:3000/notes
+    localhost:3000/notes
 
 ### Receiving updates from upstream
 
