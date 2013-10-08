@@ -8,6 +8,12 @@ Runs like a typical express app:
 
     node app.js
 
+### Checking in Browser
+
+Run the app in Browser
+
+http://localhost:3000/notes
+
 ### Receiving updates from upstream
 
 Just fetch the changes and merge them into your project with git.
